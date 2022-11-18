@@ -1,0 +1,65 @@
+<html>
+  <html lang="en"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>First web page</title>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  <body>
+    <style>
+      img {
+        background-image: url("/images/monkey2.png");
+        width: 200px;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+    <h1>REGISTRATION FORM</h1>
+    <form action="results.html" method="get">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="user123" required />
+      <br />
+      <label for="Email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="uncleroger@gmail.com"
+        required
+      />
+      <br />
+      <label for="date">Birthdate</label>
+      <input type="date" name="date" id="date" min="2002-01-01" />
+      <br />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" />
+      <br />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" />
+      <br />
+      <label for="race">Race</label>
+      <select name="race" id="race">
+        <option value="Chinese">Chinese</option>
+        <option value="Malay">Malay</option>
+        <option value="Indian">Indian</option>
+        <option value="Others">Others</option>
+      </select>
+      <br />
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="haiyaa456" required />
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+      <br />
+      <a href="/fourhourclass.html">Back to home page</a>
+    </form>
+  </body>
+</html>
